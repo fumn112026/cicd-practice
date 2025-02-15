@@ -6,4 +6,4 @@ jobs:
     env:
       USENAME: ${{ vars.USENAME }}
     steps:
-      -run: echo "${USENAME}"
+      - run: echo "${USENAME}"
