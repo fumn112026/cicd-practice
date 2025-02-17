@@ -1,6 +1,6 @@
 name: Comment
 on: pull_request
-jonbs:
+jonb:
   comment:
     runs-on: ubuntu-latest
     premissions:          # GITHUB_TOKENの権限を指定
@@ -10,5 +10,5 @@ jonbs:
       - uses: actions/checkout@v4
       - run: gh pr comment "${GITHUB_HEAD_REF}" --body "Hello, ${GITHUB_ACTOR}!"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
